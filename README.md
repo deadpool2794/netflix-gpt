@@ -5,18 +5,23 @@
 - Header
 - Landing Page
 - Login/Signup Page
+- Setup firebase
+- Deployed app to firebase
+- Setup redux
+- Authentication and redirection
 
 #### Features
 
 - Home Page
     - Header
         - Sign in button
+    - Content
 
 - Login/Signup page
     - Email
     - Password
     - Sign In --> Browse Page
-    - Sign Up
+    - Sign Up --> Full Name
 
 - Browse Page (only logged in users)
     - Header

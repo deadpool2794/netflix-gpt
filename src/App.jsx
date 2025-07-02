@@ -1,9 +1,9 @@
-import Browse from './components/Browse'
-import Header from './components/Header'
 import LandingPage from './components/LandingPage'
 import LoginPage from './components/LoginPage'
+import BrowsePage from './components/BrowsePage'
 import { createBrowserRouter } from 'react-router-dom'
 import { RouterProvider } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 
 const App = () => {
     const appRouter = createBrowserRouter([
@@ -14,6 +14,10 @@ const App = () => {
         {
             path: '/login',
             element: <LoginPage />,
+        },
+        {
+            path: '/browse',
+            element: <BrowsePage />,
         },
     ])
 

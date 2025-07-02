@@ -1,10 +1,13 @@
 import { APP_LOGO } from '../utils/constants'
 import LoginButton from './LoginButton'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 const Header = () => {
+    const user = useSelector((store) => store.user)
+
     return (
-        <nav className="h-[10vh] flex justify-between items-center px-32 pt-4 bg-gradient-to-b from-black">
+        <nav className="h-20 flex justify-between items-center px-32 pt-4 bg-gradient-to-b from-black">
             <Link to="/" className="h-full">
                 <img className="h-full w-auto" alt="logo" src={APP_LOGO} />
             </Link>
@@ -16,6 +19,7 @@ const Header = () => {
                 >
                     <option value="English"> English</option>
                 </select>
+                {user !== null && <span className="text-white pr-6 font-bold">{user.displayName}</span>}
                 <LoginButton />
             </div>
         </nav>
