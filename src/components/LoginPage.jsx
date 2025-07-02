@@ -1,7 +1,6 @@
 import Header from './Header'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { LANDINGPAGE_BG_IMAGE, LOGIN_API } from '../utils/constants'
 
 const LoginPage = () => {
     const [userName, setUserName] = useState('')
@@ -43,7 +42,7 @@ const LoginPage = () => {
 
     return (
         <div
-            className={`h-full bg-[url('${LANDINGPAGE_BG_IMAGE}')] bg-cover bg-center bg-no-repeat`}
+            className={`h-full bg-[url("https://assets.nflxext.com/ffe/siteui/vlv3/75b0ed49-75ab-4a63-bd45-37bc2c95cb73/web/NL-en-20250623-TRIFECTA-perspective_da65940d-6ee0-42e2-a0cf-16da07a8f7e7_large.jpg")] bg-cover bg-center bg-no-repeat`}
         >
             <Header />
             <div className="h-[90vh] flex justify-center items-center">
