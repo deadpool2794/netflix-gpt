@@ -7,7 +7,7 @@ const LoginPage = () => {
     const [userName, setUserName] = useState('')
     const [password, setPassword] = useState('')
     const [fullName, setFullName] = useState('')
-    const [error, setError] = useState('invalid username')
+    const [error, setError] = useState('')
     const [reenterPassword, setReenterPassword] = useState('')
     const [checkboxClicked, setCheckboxClicked] = useState(false)
     const [isSignUpForm, setIsSignUpForm] = useState(false)
