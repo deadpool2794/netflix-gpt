@@ -7,7 +7,11 @@ const Header = () => {
     const user = useSelector((store) => store.user)
 
     return (
-        <nav className="fixed top-0 left-0 right-0 h-20 flex justify-between items-center px-4 md:px-16 lg:px-32 pt-4 bg-gradient-to-b from-black to-transparent z-20">
+        <nav
+            className={
+                'fixed top-0 left-0 right-0 h-20 flex justify-between items-center px-4 md:px-16 lg:px-32 pt-4 to-transparent z-20 bg-gradient-to-b from-black'
+            }
+        >
             <Link to="/" className="h-full">
                 <img className="h-full w-auto" alt="logo" src={APP_LOGO} />
             </Link>
