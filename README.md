@@ -12,7 +12,8 @@
 - Browse Page
 - Video Banner
 - Custom Hooks for fetching movies and trailers
-- movieSlice to movie data from TMDB API
+- movieSlice for movie data from TMDB API
+- Added MovieList and MovieCard
 
 #### Features
 
