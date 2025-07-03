@@ -9,6 +9,10 @@
 - Deployed app to firebase
 - Setup redux
 - Authentication and redirection
+- Browse Page
+- Video Banner
+- Custom Hooks for fetching movies and trailers
+- movieSlice to movie data from TMDB API
 
 #### Features
 

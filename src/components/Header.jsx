@@ -7,19 +7,19 @@ const Header = () => {
     const user = useSelector((store) => store.user)
 
     return (
-        <nav className="h-20 flex justify-between items-center px-32 pt-4 bg-gradient-to-b from-black">
+        <nav className="fixed top-0 left-0 right-0 h-20 flex justify-between items-center px-4 md:px-16 lg:px-32 pt-4 bg-gradient-to-b from-black to-transparent z-20">
             <Link to="/" className="h-full">
                 <img className="h-full w-auto" alt="logo" src={APP_LOGO} />
             </Link>
-            <div className="pr-9">
+            <div className="flex items-center gap-4 pr-4">
                 <select
                     id="languageOptions"
                     name="languageOptions"
-                    className="text-white border border-white px-6 py-2  rounded-md mr-8"
+                    className="text-white border border-white px-4 py-2 rounded-lg"
                 >
-                    <option value="English"> English</option>
+                    <option value="English">English</option>
                 </select>
-                {user !== null && <span className="text-white pr-6 font-bold">{user.displayName}</span>}
+                {user !== null && <span className="text-white font-bold">{user.displayName}</span>}
                 <LoginButton />
             </div>
         </nav>

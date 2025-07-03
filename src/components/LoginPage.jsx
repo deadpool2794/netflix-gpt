@@ -23,7 +23,7 @@ const LoginPage = () => {
         if (user !== null) {
             navigate('/browse')
         }
-    }, [user])
+    }, [])
 
     const handleFormSubmission = () => {
         const isValidEmail = /^[\w.-]+@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(userName)
@@ -93,11 +93,11 @@ const LoginPage = () => {
 
     return (
         <div
-            className={`h-full bg-[url("https://assets.nflxext.com/ffe/siteui/vlv3/75b0ed49-75ab-4a63-bd45-37bc2c95cb73/web/NL-en-20250623-TRIFECTA-perspective_da65940d-6ee0-42e2-a0cf-16da07a8f7e7_large.jpg")] bg-cover bg-center bg-no-repeat`}
+            className={`min-h-screen bg-[url("https://assets.nflxext.com/ffe/siteui/vlv3/75b0ed49-75ab-4a63-bd45-37bc2c95cb73/web/NL-en-20250623-TRIFECTA-perspective_da65940d-6ee0-42e2-a0cf-16da07a8f7e7_large.jpg")] bg-cover bg-center bg-no-repeat`}
         >
             <Header />
-            <div className="h-[90vh] flex justify-center items-center mt-8">
-                <div className="pt-10 pb-20 w-1/3 border border-white rounded-lg bg-black/70 mb-44 flex flex-col justify-center items-center">
+            <div className="min-h-screen flex justify-center items-center">
+                <div className="pt-10 pb-20 w-1/3 border border-white rounded-lg bg-black/70 mb-24 flex flex-col justify-center items-center">
                     <h1 className="text-white font-bold mb-8 text-2xl ">
                         {isSignUpForm ? 'Sign Up' : 'Log In'}
                     </h1>

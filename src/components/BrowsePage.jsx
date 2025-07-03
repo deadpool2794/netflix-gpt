@@ -1,21 +1,15 @@
-import React, { useEffect } from 'react'
 import Header from './Header'
-import { useSelector } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
+import MoviesList from './MoviesList'
+import useDiscoverMovies from '../hooks/useDiscoverMovies'
+import VideoPlayBackContainer from './VideoPlayBackContainer'
 
 const BrowsePage = () => {
-    const navigate = useNavigate()
-    const user = useSelector((store) => store.user)
-    useEffect(() => {
-        if (user === null) {
-            navigate('/login')
-        }
-    }, [])
-
+    useDiscoverMovies()
     return (
         <>
             <Header />
-            <div> BrowsePage</div>
+            <VideoPlayBackContainer />
+            <MoviesList />
         </>
     )
 }

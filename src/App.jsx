@@ -4,6 +4,7 @@ import BrowsePage from './components/BrowsePage'
 import { createBrowserRouter } from 'react-router-dom'
 import { RouterProvider } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
+import ProtectedRoute from './components/ProtectedRoute'
 
 const App = () => {
     const appRouter = createBrowserRouter([
@@ -17,12 +18,16 @@ const App = () => {
         },
         {
             path: '/browse',
-            element: <BrowsePage />,
+            element: (
+                <ProtectedRoute>
+                    <BrowsePage />
+                </ProtectedRoute>
+            ),
         },
     ])
 
     return (
-        <div className="w-screen h-screen bg-black">
+        <div className="w-screen h-screen bg-black text-white relative">
             <RouterProvider router={appRouter} />
         </div>
     )
