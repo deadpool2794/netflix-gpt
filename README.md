@@ -14,6 +14,7 @@
 - Custom Hooks for fetching movies and trailers
 - movieSlice for movie data from TMDB API
 - Added MovieList and MovieCard
+- Added AI page that helps users with movie suggestions
 
 #### Features
 
@@ -40,3 +41,5 @@
 - GPT Page(only logged in users)
     - Search Bar
     - Movie Suggestions
+
+- Link => https://netflix-gpt-4ff83-f8687.web.app/browse
