@@ -42,4 +42,4 @@
     - Search Bar
     - Movie Suggestions
 
-- Link => https://netflix-gpt-4ff83-f8687.web.app/browse
+- Link => https://netflix-gpt-4ff83-f8687.web.app
